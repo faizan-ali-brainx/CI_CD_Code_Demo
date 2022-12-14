@@ -25,3 +25,4 @@ jobs:
       - name: Get Firebase token
         env:
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+        run: echo $FIREBASE_TOKEN
