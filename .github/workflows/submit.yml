@@ -22,7 +22,5 @@ jobs:
         run: chmod +x gradlew
       - name: Deploy the build
         run: ./gradlew assembleDebug appDistributionUploadDebug
-      - name: Get Firebase token
         env:
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
-        run: echo $FIREBASE_TOKEN
